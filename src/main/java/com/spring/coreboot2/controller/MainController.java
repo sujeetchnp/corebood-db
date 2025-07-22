@@ -14,7 +14,7 @@ public class MainController {
     // this is interface, so we need its implementation class
     private DatabaseService databaseService;
 
-    public MainController(@Qualifier("oracleImplementation") DatabaseService databaseService) {   // myDatabaseService
+    public MainController(DatabaseService databaseService) {   // myDatabaseService
         this.databaseService = databaseService;
     }
 
